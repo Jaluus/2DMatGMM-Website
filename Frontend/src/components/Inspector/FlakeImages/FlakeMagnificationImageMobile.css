@@ -1,0 +1,14 @@
+.flakeMagnificationImageMobileHeadingDiv {
+    display: flex;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.OverviewImage{
+    width: 100%;
+    height: auto;
+}
+
+.FlakeMagnificationImageMobileCard {
+    padding: 0;
+}

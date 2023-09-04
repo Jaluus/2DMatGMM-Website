@@ -1,0 +1,31 @@
+.flakeInspectorHeaderText {
+  color: black;
+}
+
+.flakeInspectorHeaderButtonsLeft {
+  float: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.flakeInspectorHeaderButtonsRight {
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+
+.flakeInspectorHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 100%;
+  height: 3.5rem !important;
+  font-size: 24px;
+  border-left: 0px !important;
+  border-right: 0px !important;
+  border-top: 0px !important;
+}

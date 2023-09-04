@@ -1,0 +1,50 @@
+{
+  "name": "flake_frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "",
+    "@mantine/core": "",
+    "@mantine/hooks": "",
+    "@mantine/notifications": "",
+    "@tabler/icons": "",
+    "@testing-library/jest-dom": "",
+    "@testing-library/react": "",
+    "@testing-library/user-event": "",
+    "bootstrap": "^5.2.3",
+    "d3-array": "^3.2.4",
+    "dayjs": "",
+    "mantine-react-table": "",
+    "react": "",
+    "react-bootstrap": "",
+    "react-dom": "",
+    "react-router-dom": "",
+    "react-scripts": "",
+    "recharts": "^2.7.2",
+    "web-vitals": ""
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

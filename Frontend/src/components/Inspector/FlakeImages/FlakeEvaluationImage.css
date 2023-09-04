@@ -1,0 +1,6 @@
+.FlakeEvaluationTextDiv {
+  display: flex;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}

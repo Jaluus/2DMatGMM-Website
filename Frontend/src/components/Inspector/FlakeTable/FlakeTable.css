@@ -1,0 +1,45 @@
+.flakeTableCellSelect {
+  background-color: #b7b7b7 !important;
+}
+
+.flakeIDparagraph {
+  float: left;
+  margin: 0px;
+}
+
+.flakeTableEntryDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.flakeTableEntry {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.flakeTableEntryPagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 0px !important;
+  border-right: 0px !important;
+  border-bottom: 0px !important;
+}
+.flakeTablePaginationButton {
+  cursor: pointer;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.flakeTablePaginationText {
+  cursor: default;
+}
+
+.flakeTableHeader {
+  width: 100%;
+  cursor: default;
+}

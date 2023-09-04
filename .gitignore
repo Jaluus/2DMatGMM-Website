@@ -1,0 +1,27 @@
+__pycache__
+.vscode
+
+# Dont leak your Credentials lol
+database.ini
+
+# dependencies
+.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+Frontend/node_modules
+Frontend/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

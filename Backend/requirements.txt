@@ -1,0 +1,7 @@
+pymysql
+sqlalchemy >= 2.0.0
+numpy
+opencv-python
+flask
+flask_cors
+cryptography

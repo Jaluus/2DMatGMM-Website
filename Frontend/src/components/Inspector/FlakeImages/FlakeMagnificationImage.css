@@ -1,0 +1,37 @@
+.mainMagnificationImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.overlayMagnificationImage {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+}
+.parentMagnificationImage {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.flakeMagnificationImageHeadingDiv {
+    display: flex;
+    height: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.OverviewImage{
+    width: 100%;
+    height: auto;
+}
+
+.FlakeMagnificationImageCard {
+    padding: 0;
+}

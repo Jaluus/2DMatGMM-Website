@@ -1,0 +1,20 @@
+.FlakeInspectorFooterMobilefooterDiv {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 3.5rem !important;
+  font-size: 24px;
+  border-left: 0px !important;
+  border-right: 0px !important;
+  border-bottom: 0px !important;
+}
+
+.FlakeInspectorFooterMobileArrowButtons {
+  width: 30%;
+  height: 100%;
+}

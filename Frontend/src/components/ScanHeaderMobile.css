@@ -1,0 +1,32 @@
+.scanHeaderMobile {
+  font-size: 1.5rem;
+  height: 8rem;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  margin-bottom: 0rem;
+  z-index: 100;
+}
+
+.scanHeaderMobileDiv {
+  width: 90%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.scanHeaderMobileTextMain {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.scanHeaderMobileTextSubtext {
+  font-size: 1rem;
+}
+
+.scanHeaderMobileLink {
+  padding-left: 1rem;
+  text-decoration: none;
+  font-size: medium;
+}

@@ -1,0 +1,18 @@
+.imageContainer {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.imageContainerOverview {
+    width: 30%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.magImageHeading {
+    display: flex;
+    justify-content: right;
+}

@@ -1,0 +1,20 @@
+.scanInspectorMainDiv {
+  display: flex;
+  flex-direction: row;
+}
+.scanInspectorFlakeTableTray {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-left: 0px !important;
+  border-top: 0px !important;
+  border-bottom: 0px !important;
+  float: left;
+  flex-basis: 14rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.scanInspectorFlakeInspector {
+  float: right;
+  flex-grow: 1;
+}

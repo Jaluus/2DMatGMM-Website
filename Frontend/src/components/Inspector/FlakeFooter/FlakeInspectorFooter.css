@@ -1,0 +1,14 @@
+.FlakeInspectorFooterfooterDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 14rem);
+  height: 3.5rem !important;
+  font-size: 24px;
+  border-left: 0px !important;
+  border-right: 0px !important;
+  border-bottom: 0px !important;
+}

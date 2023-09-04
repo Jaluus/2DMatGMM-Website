@@ -1,0 +1,17 @@
+Table.FlakeInformationTableMobile td {
+    padding: 4px !important;
+}
+
+.FlakeInformationTableMobileMainDiv {
+    display: flex;
+    flex-direction: row;
+}
+.FlakeInformationTableMobileColumnLeft {
+    flex: 1 1 0px;
+    padding-right: 0.25rem;
+
+}
+.FlakeInformationTableMobileColumnRight {
+    flex: 1 1 0px;
+    padding-left: 0.25rem;
+}

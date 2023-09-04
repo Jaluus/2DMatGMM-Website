@@ -1,0 +1,45 @@
+.scanHeader {
+  font-size: 1.5rem;
+  height: 5rem;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  margin-bottom: 1.5rem;
+  z-index: 100;
+}
+
+.scanHeaderDiv {
+  width: 60%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.scanHeaderTextMain {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.scanHeaderTextSubtext {
+  font-size: 1rem;
+}
+
+.scanHeaderLink {
+  padding-left: 1rem;
+  text-decoration: none;
+  font-size: medium;
+}
+
+@media screen and (max-width: 768px) {
+  .scanHeader {
+    height: 8rem;
+    margin-bottom: 0;
+  }
+  .scanHeaderDiv {
+    width: 90%;
+  }
+  .scanHeaderTextRight {
+    display: none;
+  }
+}

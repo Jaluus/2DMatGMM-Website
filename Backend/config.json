@@ -1,0 +1,8 @@
+{
+    "database_username":"username",
+    "database_password":"password",
+    "database_address":"localhost",
+    "database_port":"3306",
+    "database_name":"flakedemo",
+    "image_directory":"C:/Path/to/the/image/directory/"
+}

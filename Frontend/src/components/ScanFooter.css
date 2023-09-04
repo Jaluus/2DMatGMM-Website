@@ -1,0 +1,11 @@
+.ScanFooterImagePos{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    cursor:default;
+}
+
+.ScanFooterLogo{
+    height: 5rem;
+    margin: 1rem;
+}

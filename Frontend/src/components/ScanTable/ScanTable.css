@@ -1,0 +1,10 @@
+.scanTable {
+  width: 60%;
+  margin: auto ;
+  height: 80%;
+}
+
+.scanTableMobile {
+  width: 100%;
+  margin: 0;
+}

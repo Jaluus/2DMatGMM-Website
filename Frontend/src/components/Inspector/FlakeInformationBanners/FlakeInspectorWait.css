@@ -1,0 +1,13 @@
+.waitNoFlakes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .waitNoFlakes{
+        height: 70lvh;
+    }
+}
