@@ -2,6 +2,8 @@
 
 This document provides instructions for setting up Apache Lounge, MySQL, Python, and NodeJS on your Windows system.
 
+If you have a Linux System you may use Nginx instead of Apache Lounge.
+
 ## Requirements
 
 Ensure that your system meets the following requirements:
@@ -9,7 +11,7 @@ Ensure that your system meets the following requirements:
 - Windows 7 or later
 - Administrator access
 
-## Apache Lounge Installation (For Image Serving)
+## Apache Lounge Installation (For Image and Website Serving)
 
 1. Download the Apache Lounge version `httpd-2.4.57-win64-VS17.zip` from the [Apache Lounge website](https://www.apachelounge.com/download/).
 2. Extract the downloaded zip file.
@@ -19,9 +21,25 @@ Ensure that your system meets the following requirements:
 6. Open the `httpd.conf` file located at `C:\Apache24\conf\` and append the following configuration to map the paths to your image directory:
 
 ```apacheconf
+
+# This is the configuration for the images directory to allow Apache to serve images from the directory
 Alias /images "C:/path/to/your/images"
 <Directory "C:/path/to/your/images">
     Options Indexes
+    Require all granted
+</Directory>
+
+# This is the configuration for the build directory to allow Apache to serve the web application from the directory
+DocumentRoot "C:/path/to/the/build"
+<Directory "C:/path/to/the/build">
+    Options Indexes FollowSymLinks
+    AllowOverride All
+
+    Options -MultiViews
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.html [QSA,L]
+
     Require all granted
 </Directory>
 ```
@@ -49,4 +67,6 @@ Alias /images "C:/path/to/your/images"
 2. Navigate to the `Frontend` directory.
 3. If you are setting up for local deployment only, you can skip this step. Otherwise, edit the `.env` file to include your configurations.
 4. Run the command `npm install` in Command Prompt to install all necessary npm packages.
-5. Run the command `npm run build` in Command Prompt to build the web application.
+5. Run the command `npm run build` in Command Prompt to build the web application. This will create a `build` directory in the `Frontend` directory.
+6. This is the directory that will be served by Apache. Ensure that the `httpd.conf` file is configured to serve the `build` directory by correctly setting the path.
+7. Dont forget to restart the Apache service after making any changes to the `httpd.conf` file.
