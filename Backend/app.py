@@ -87,7 +87,7 @@ def CHIP_DELETE():
         return str(e)
 
 
-@app.route("/scan", methods=["DELETE"])
+@app.route("/scans", methods=["DELETE"])
 def SCAN_DELETE():
     try:
         scan_id = int(request.args.get("scan_id"))
@@ -188,7 +188,11 @@ def SCAN_COMMENT_SET():
         if new_comment is None and new_user is None and new_name is None:
             return "No new values provided"
         update_scan_info(
-            db_session, scan_id, new_comment, new_user, new_name,
+            db_session,
+            scan_id,
+            new_comment,
+            new_user,
+            new_name,
         )
         return f"Updated Scan {scan_id}"
     except ValueError as ve:
@@ -268,9 +272,15 @@ def FLAKE_DOWNLOAD():
         flake: Flake = db_session.get(Flake, flake_id)
         assert flake is not None, f"Flake with id '{flake_id}' does not exist"
 
-        memory_file = create_memory_file(flake, download_scalebar, IMAGE_DIRECTORY,)
+        memory_file = create_memory_file(
+            flake,
+            download_scalebar,
+            IMAGE_DIRECTORY,
+        )
         return send_file(
-            memory_file, download_name=f"Flake_{flake_id:.0f}.zip", as_attachment=True,
+            memory_file,
+            download_name=f"Flake_{flake_id:.0f}.zip",
+            as_attachment=True,
         )
     except AssertionError as e:
         return str(e)
@@ -282,5 +292,7 @@ def FLAKE_DOWNLOAD():
 
 if __name__ == "__main__":
     app.run(
-        debug=True, host="0.0.0.0", port=4999,
+        debug=True,
+        host="0.0.0.0",
+        port=4999,
     )
